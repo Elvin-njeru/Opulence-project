@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color:#fff;
+    background-image:url(/images/Herobackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header{
+    background-color: #000;
+    background-attachment: fixed;
+    z-index: 1000; /* ensures the header stays on top */
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+
+}
+header img{
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 24px;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f9943b;
+    text-decoration:underline;
+}  
+.restaurant-name{
+    font-size: 70px;
+    font-weight: 900px;
+    font-family:"League Spartan";
+    color: #fff;
+    margin-left: 30px;
+    
+   
+}
+#rest-name{
+    font-size: 60px;
+    font-weight: 900px;
+    font-family:"League Spartan";
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.intro-text{
+    color: #fff;
+    width: 500px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 24px;
+    font-family:"Montserrat";
+}
+.button{
+    display: flex;
+    gap: 20px;
+}
+button{
+    background-color: #f9943b;
+    margin-top: 20px;
+    width: 250px;
+    height: 60px;
+    font-size: 28px;
+}
+img{
+    border-radius: 30PX;
+}
+#services{
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.services-pic{
+    display: flex;
+    gap: 300px;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.rest-pics{
+    width: 200vh;
+    margin-left: 60px;
+    display: flex;
+    gap: 80px;
+
+}
+.h1{
+    margin-top: 100px;
+    color:#fff;
+    margin-left: 40%;
+    font-family:"League Spartan";
+    font-size: 40px;
+    font-weight: 900px; 
+}
+.OPULENCE{
+    color: #fff;
+    margin-left: 35%; 
+    font-family:"League Spartan";
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.p1{
+    color: #fff;
+    width: 800px;
+    margin-left: 18%;
+    text-align: center;
+    font-family:"Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.services{
+    display: flex;
+    color: #fff;
+    gap: 300px;
+    font-family:"League Spartan";
+    margin-left: 90px;
+    margin-right: 100px;
+    font-size: larger;
+
+}
+.p2{
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:"Montserrat";
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+.count-text{
+   margin-top: 50px;
+   margin-left: 500px;
+}
+.menu-but{
+    margin-left:500px ;
+}
+.counts{
+    display: flex;
+    gap: 100px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+.counts ul li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color:#000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+footer hr {
+    width: 87%;
+    position: absolute;
+    left:75px;
+    margin-top: 90px;
+    
+}
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    text-align: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-right:100px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.footer-details ul{
+    font-family:sans-serif;
+    list-style:none;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.footer-details ul h3{
+    text-decoration: underline;
+}
+.footer-details ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-details ul li a:hover{
+    color: #f9943b;
+    text-decoration:underline;
+}
+.footer-base{
+    display: flex;          
+    justify-content: space-between; 
+    margin-left: 90px;
+    margin-right:100px;
+    margin-top: 20px;
+}
+.footer-icons{
+    display: flex;
+    gap: 40px;
+}
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}

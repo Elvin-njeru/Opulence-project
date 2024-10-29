@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All</title>
+
+    <!-- Linking css and js -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- for the fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+body {
+    background-color: rgb(3, 3, 3)
+}
+header{
+    background-color: #000;
+    background-attachment: fixed;
+    z-index: 1000; /* ensures the header stays on top */
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+
+}
+header img{
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 24px;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f9943b;
+    text-decoration:underline;
+}  
+.container {
+    margin: 30px auto
+}
+
+.navbar-nav .nav-link {
+    color: white!important;
+    padding: 0.5rem 0rem !important;
+    border-color: transparent;
+    margin-left: 1.5rem;
+    transition: none
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none
+}
+
+.navbar-nav .nav-link.active,
+.border-gold {
+    border-bottom: 3px solid #f9943b;
+}
+
+.navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #f9943b;
+}
+
+.container .product-item {
+    min-height: 450px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0
+}
+
+.container .product-item .product {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.container .product-item .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.container .product-item .product .icons .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease;
+    transform: rotate(180deg);
+    cursor: pointer
+}
+
+.container .product-item .product .icons .icon:hover {
+    background-color: goldenrod;
+    color: #fff
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(3) {
+    transition-delay: 0.2s
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(2) {
+    transition-delay: 0.15s
+}
+
+.container .product-item .product .icons .icon:nth-last-of-type(1) {
+    transition-delay: 0.1s
+}
+
+.container .product-item:hover .product .icons .icon {
+    transform: translateY(-60px)
+}
+
+.container .product-item .tag {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 0 0.4rem
+}
+
+.container .product-item .title {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px
+}
+
+.container .product-item .fa-star {
+    font-size: 0.65rem;
+    color: #f9943b;
+}
+
+.container .product-item .price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600
+}
+
+.fw-800 {
+    font-weight: 800
+}
+
+.bg-black {
+    background-color: #1f1d1d;
+    color: #fff
+}
+
+.golden{
+    color: #f9943b;
+}
+.text{
+    color: white;
+}
+footer{
+    background-color:#000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+footer hr {
+    width: 87%;
+    position: absolute;
+    left:75px;
+    margin-top: 90px;
+    
+}
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    text-align: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-right:100px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.footer-details ul{
+    font-family:sans-serif;
+    list-style:none;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.footer-details ul h3{
+    text-decoration: underline;
+}
+.footer-details ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-details ul li a:hover{
+    color: #f9943b;
+    text-decoration:underline;
+}
+.footer-base{
+    display: flex;          
+    justify-content: space-between; 
+    margin-left: 90px;
+    margin-right:100px;
+    margin-top: 20px;
+}
+.footer-icons{
+    display: flex;
+    gap: 40px;
+}
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+@media (max-width: 767.5px) {
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+        background-color: goldenrod;
+        color: #fff !important
+    }
+
+    .navbar-nav .nav-link {
+        border: 3px solid transparent;
+        margin: 0.8rem 0;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center
+    }
+}
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 id="h1">
+            <img 
+            src="/images/OpulenceLogo.png">
+        </h1>
+        <nav >
+            <ul>
+                 <li><a href="/index.html">Home</a></li>   
+                 <li><a href="/About.html">About </a></li>
+                 <li><a href="/Reservation.html">Reservations</a></li>  
+                 <li><a href="./menu/all.html">Menu</a></li>  
+                 <li><a href="/Gallery.html">Gallery</a></li>  
+                 <li><a href="/Contact.html">Contact Us</a></li>  
+            </ul>
+        </nav>
+    </header>
+<div class="container " style="background-color: #000;">
+    <!-- menu navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container p-0"> 
+            <a class="navbar-brand text-uppercase fw-800" href="#"><span class="border-gold pe-2">OPULENCE</span>RESTAURANT</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <div class="navbar-nav ms-auto"> 
+                    <a class="nav-link active" aria-current="page" href="./all.html">All</a>
+                    <a class="nav-link" href="breakfast.html">Breakfast</a> 
+                    <a class="nav-link" href="brunch.html">Brunch</a>
+                    <a class="nav-link" href="maincourse.html">Main course</a> 
+                    <a class="nav-link" href="dessert.html">Dessert</a>
+
+                    <style>
+                        .person-icon {
+                            font-size: 26px;
+                            color: #000;
+                        }
+                    </style>
+                    
+                    <a class="nav-link" href="login.html"> <i class="fas fa-user person-icon"></i> </a> </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- i'll add this later when i want to show something new -->
+    <!-- <div class="tag bg-red">New Dish</div> comes before the name of food -->
+
+    <!-- row 1 -->
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/caramelicecream.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Chocolate IceCream with caramel sauce</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/shrimps.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Shrimps</div>
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">350.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/friesandsteak.jpg" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Fries with Smoked steak</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pasta.jpg" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/burger.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+        
+    </div>
+
+    <!-- row 3 -->
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> 
+                <img src="images/pancakes.avif" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                    <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                    <a href="single.html" style="text-decoration: none;color: #000;">
+                    <li class="icon"><span class="fas fa-shopping-bag"></span></li> </a>
+                </ul>
+            </div>
+
+            <div class="title text pt-4 pb-1">Blueberry Pancakes</div>
+            <!-- rating stars ,, i got them from faviconnnnn kazi mingi hii -->
+            <div class="d-flex align-content-center justify-content-center"> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> <span class="fas fa-star"></span> 
+                <span class="fas fa-star"></span> 
+            </div>
+            <div class="price text"><span class="golden">400.00 </span>KES</div>
+        </div>
+        
+    </div>
+
+</div>
+
+<hr>
+
+<!-- <section class="row bg-dark p-5 text-white text-center mb-4">
+    <div class="col-md-12">
+        <h6>Created by seliinnneeee &copy; 2024 All Rights Reserved.</h6>
+
+        <style>
+            .social-icon {
+            font-size: 24px;
+            margin: 10px;
+            color: white;
+            }
+
+            .social-icon:hover {
+                color: goldenrod;
+            }
+        </style>
+        Icons from favicon -->
+
+        <!-- <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+
+    </div>
+
+</section> -->
+<footer>
+        
+    <hr>
+    <div class="footer-details" >
+        <ul>
+            <h3>Headquarters</h3><br>
+         <li><a href="https://www.google.com/maps/dir//Juja+Kwale,+Rd,+Juja/@-1.0912493,36.9318957,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f46276c2d9021:0xbefd8e40071d3352!2m2!1d37.0142977!2d-1.0912504?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">
+            <p>JKUAT-JUJA
+            </p>
+             </a>
+         </li>
+            <br>
+        </ul>
+        <ul>
+         
+            <h3>Navigation</h3><br>
+            <li><a href="/About.html">About Us</a></li><br>
+            <li><a href="/Reservation.html">Reservations</a></li><br>
+            <li><a href="/Menu.html">Menu</a></li><br>
+            <li><a href="/Gallery.html">Gallery</a></li><br>
+            <li><a href="/Contact.html">Contact Us</a></li>  
+        </ul>
+    
+        <ul>
+            <h3>Privacy</h3><br>
+            <li><a href="#Terms">Terms and conditions</a></li><br>
+            <li><a href="#Coockie">Coockie preference</a></li>
+        </ul>
+    </div>
+    <section class="footer-base">
+        <div>
+            <img  _ngcontent-tsq-c132="" src="">
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"></a>
+            <a href="https://www.instagram.com/elewa_education/"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"></a>
+            <a href="https://www.linkedin.com/company/elewa/"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"></a>
+        </div>
+    </section>
+    
+</footer>
+</body>
+
+</html>
