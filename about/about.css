@@ -1,0 +1,267 @@
+/* about page styles */
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #f39c12; /* Orange */
+    --secondary-color: #333; /* Dark */
+    --background-color: #fff; /* White */
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: #000;
+   
+}
+header{
+    background-color:#000;
+    background-attachment: fixed;
+    z-index: 1000; /* ensures the header stays on top */
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+
+}
+header img{
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 20px;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f9943b;
+    text-decoration:underline;
+}  
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* About Section Styling */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background-color:#000;
+}
+
+.about-content {
+    width: 50%;
+    color:#fff;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+.h1{
+    margin-top: 100px;
+    color:#fff;
+    margin-left: 40%;
+    font-family:"League Spartan";
+    font-size: 40px;
+    font-weight: 900px; 
+}
+.p1{
+    color: #fff;
+    width: 800px;
+    margin-left: 18%;
+    text-align: center;
+    font-family:"Montserrat";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.services{
+    display: flex;
+    color: #fff;
+    gap: 300px;
+    font-family:"League Spartan";
+    margin-left: 90px;
+    margin-right: 100px;
+    font-size: larger;
+
+}
+/* Team Section Styling */
+.team {
+    background-color: var(--secondary-color);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.team h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    width: 250px;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    background-color: var(--primary-color);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: var(--secondary-color);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color:#000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+footer hr {
+    width: 87%;
+    position: absolute;
+    left:75px;
+    margin-top: 90px;
+    
+}
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    text-align: center;
+    list-style: none;
+    margin-left: 50px;
+    margin-right:100px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.footer-details ul{
+    font-family:sans-serif;
+    list-style:none;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.footer-details ul h3{
+    text-decoration: underline;
+}
+.footer-details ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-details ul li a:hover{
+    color: #f9943b;
+    text-decoration:underline;
+}
+.footer-base{
+    display: flex;          
+    justify-content: space-between; 
+    margin-left: 90px;
+    margin-right:100px;
+    margin-top: 20px;
+}
+.footer-icons{
+    display: flex;
+    gap: 40px;
+}
+.footer-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
