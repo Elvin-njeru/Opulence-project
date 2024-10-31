@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: #000;
+    font-family:"Montserrat";
+   
+}
+header{
+    border-bottom: 1px solid;
+    background-color:#000;
+    background-attachment: fixed;
+    z-index: 1000; /* ensures the header stays on top */
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+
+}
+header img{
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 24px;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f9943b;
+    text-decoration:underline;
+}  
+
+.h1 {
+    font-size: 3em;
+    margin-left: 500px;
+    margin-bottom: 40px;
+    font-family: "League Spartan";
+    margin-top: 40px;
+  }
+  
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .menu-item {
+    border: 1px solid #000;
+    background-color: #f9943b;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .menu-item p {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+} 
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .cart-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 200px;
+    text-align: left;
+    display: none;
+  }
+  .cart-container img{
+    width: 50%;
+    height: auto;
+    border-radius: 8px
+  }
+  .cart-container h2 {
+    margin-top: 0;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

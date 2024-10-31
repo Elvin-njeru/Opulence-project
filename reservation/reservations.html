@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opulence Restaurant Reservation</title>
+  <link rel="stylesheet" href="/reservation/reservation.css">
+</head>
+<body>
+  <header>
+    <h1 id="h1">
+        <img 
+        src="/images/OpulenceLogo.png">
+    </h1>
+    <nav >
+        <ul>
+             <li><a href="/index.html">Home</a></li>   
+             <li><a href="/about/about.html">About </a></li>
+             <li><a href="/reservation/reservations.html">Reservations</a></li>  
+             <li><a href="/menu asset/menu.html">Menu</a></li>  
+             <li><a href="/gallery/gallery.html">Gallery</a></li>  
+             <li><a href="/contact/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<h1 class="h2">Make a Reservation</h1>
+<p class="p1">
+  At Opulence Restaurant, we understand the importance of a seamless dining experience, and we invite you to secure your place at our tables by making reservations, ensuring we can provide you with exceptional service and culinary delights tailored to your preferences.
+</p>
+<br>
+  <div class="reservation-container">
+    <form id="reservationForm">
+      <h1 class="h1">BOOK A TABLE</h1> 
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Reservation Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Reservation Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+      <button type="submit">Reserve Now</button>
+    </form>
+
+    <div id="reservationConfirmation" class="confirmation-message"></div>
+  </div>
+  <br><br><br><br><br>
+  <!-- <div class="image">
+    <img src="/images/team chefs.jpg" alt=""
+    width="60%"
+    height="400" 
+    >
+    <img src="/images/Lunch.jpg" alt=""
+    width="60%"
+    height="400" 
+    >
+</div> -->
+<div class="service-img">
+  <img src="/images/vanillacake.jpg" alt="" 
+  width="40%"
+  height="250px" 
+  >
+  <img src="/images/food1.jpg" alt="" 
+  width="40%"
+  height="300px" 
+  >
+  <img src="/images/rice and stew.jpg" alt="" 
+  width="40%"
+  height="250px" 
+  >
+</div>
+<!-- Footer section -->
+<footer>
+        
+  <hr>
+  <div class="footer-details" >
+      <ul>
+          <h3>Headquarters</h3><br>
+       <li><a href="https://www.google.com/maps/dir//Juja+Kwale,+Rd,+Juja/@-1.0912493,36.9318957,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f46276c2d9021:0xbefd8e40071d3352!2m2!1d37.0142977!2d-1.0912504?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">
+          <p>JKUAT-JUJA
+          </p>
+           </a>
+       </li>
+          <br>
+      </ul>
+      <ul>
+       
+          <h3>Navigation</h3><br>
+          <li><a href="/about/about.html">About Us</a></li><br>
+          <li><a href="/reservation/reservations.html">Reservations</a></li><br>
+          <li><a href="/menu asset/menu.html">Menu</a></li><br>
+          <li><a href="/gallery/gallery.html">Gallery</a></li><br>
+          <li><a href="/contact/contact.html">Contact Us</a></li>  
+      </ul>
+  
+      <ul>
+          <h3>Privacy</h3><br>
+          <li><a href="#Terms">Terms and conditions</a></li><br>
+          <li><a href="#Coockie">Coockie preference</a></li>
+      </ul>
+  </div>
+  <section class="footer-base">
+      <div>
+          <img  _ngcontent-tsq-c132="" src="">
+      </div>
+      <div class="footer-icons">
+          <a href="https://www.facebook.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"></a>
+          <a href="https://www.instagram.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"></a>
+          <a href="https://www.linkedin.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"></a>
+      </div>
+  </section>
+  
+</footer>
+  <script src="/reservation/reservation.js"></script>
+</body>
+</html>
