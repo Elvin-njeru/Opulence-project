@@ -1,14 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    font-family:"Montserrat";
     background-color: #fff;
-    color: #333;
+    color: #000;
   }
-  
+  header{
+    background-color: #000;
+    background-attachment: fixed;
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+
+}
+header img{
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color:#fff;
+    font-size: 28px;
+    justify-content: flex-end;
+    font-family: "League Spartan";
+    text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #f9943b;
+    text-decoration:underline;
+}  
   .contact-container {
     max-width: 400px;
     width: 100%;
@@ -17,10 +59,12 @@ body {
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-left: 450px;
+    margin-top: 20px;
   }
   
   h1, h2 {
-    color: #ff6600; /* Orange */
+    color: #f9943b;
   }
   
   label {
@@ -44,7 +88,7 @@ body {
   button {
     width: 100%;
     padding: 12px;
-    background-color: #ff6600; /* Orange */
+    background-color: #f9943b;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -63,12 +107,14 @@ body {
     font-weight: bold;
     margin-top: 20px;
   }
-  
+  #h2{
+    margin-bottom: 20px;
+  }
   .socials {
     margin-top: 30px;
   }
   
-  .social-icon {
+  .social-icons {
     display: inline-block;
     margin: 0 10px;
     padding: 10px;
@@ -78,11 +124,102 @@ body {
     text-decoration: none;
   }
   
-  .social-icon.facebook { background-color: #3b5998; }
-  .social-icon.instagram { background-color: #C13584; }
-  .social-icon.twitter { background-color: #1DA1F2; }
+  .social-icons.facebook { background-color: #3b5998; }
+  .social-icons.instagram { background-color: #C13584; }
+  .social-icons.twitter { background-color: #1DA1F2; }
+  
+  .social-icons:hover {
+    opacity: 0.8;
+  }
+  .footer {
+    background-color: #1e1d1d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 150px;
+    margin: 10px;
+  }
+  li{
+    list-style: none;
+  }
+  li a  {
+    text-decoration: none;
+    list-style: none;
+  }
+  li a p{
+    color: #fff;
+  }
+  li a p:hover{
+    color: #f9943b;
+  }
+  
+  
+  .footer h4 {
+    color: #f9943b;
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  .footer-section p,
+  .footer-section ul,
+  .footer-note {
+    margin: 5px 0;
+    line-height: 1.4;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: orange;
+    margin: 3px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #f9943b;
+    padding: 6px 10px;
+    border: 1px solid #f9943b;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
   
   .social-icon:hover {
-    opacity: 0.8;
+    background-color: #f9943b;
+    color: black;
+  }
+  
+  .footer-note {
+    color: #fff;
+    margin-top: 15px;
   }
   

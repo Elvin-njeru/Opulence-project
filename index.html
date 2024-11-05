@@ -26,7 +26,7 @@
     </header>
     <br><br><br><br>
     <main>
-        <section>
+        <section id="hero">
             <!-- Hero section -->
              <h1 class="restaurant-name">Opulence</h1>
             <h2 id="rest-name">Restaurant </h2>
@@ -35,92 +35,176 @@
                     Welcome to Opulence, where every dish is crafted with love and fresh ingredients, promising you an unforgettable dining experience 
                 </p>
             <div class="button">
-               <a href="/Reservation.html"><button>Book a table</button></a>
-               <a href="/Menu.html"><button>Oder Now</button></a>
+               <a href="/reservation/reservations.html"><button>Book a table</button></a>
+               <a href="/menu asset/menu.html"><button>Oder Now</button></a>
             </div>
             </div>
         </section>
-        <br><br><br><br><br><br><br><br><br><br>
+        <!-- <br><br><br><br><br><br> -->
         <!-- About section -->
-        <section>
+        <section id="story">
             <h1 class="h1">OUR STORY</h1>
             <p class="p1">Opulence is a fine dining restaurant that embodies luxury, elegance, and sophistication. With its rich, jewel-toned decor and gold accents, it offers a lavish atmosphere for guests seeking a premium culinary experience with a global menu with over 150 carefully selected, mouthwatering items.</p>
-          <div>
-            <p>Dining at Opulence Restaurant promises an unforgettable experience, blending exquisite flavors, elegant ambiance, and exceptional service. Our menu, crafted by expert chefs, offers a fusion of innovation and tradition, featuring seasonal and locally sourced ingredients for ultimate freshness and quality. Guests enjoy an exclusive selection of wines and signature cocktails, carefully curated to complement every meal. Our refined setting provides a perfect backdrop for special occasions, romantic dinners, or gatherings with friends, and our dedicated team delivers warm, attentive service to ensure every detail is taken care of. Opulence Restaurant is dedicated to creating a memorable dining experience that combines culinary excellence with luxury and comfort.</p>
+          <div class="about">
+            <p id="p1">Dining at Opulence Restaurant promises an unforgettable experience, blending exquisite flavors, elegant ambiance, and exceptional service. Our menu, crafted by expert chefs, offers a fusion of innovation and tradition, featuring seasonal and locally sourced ingredients for ultimate freshness and quality. Guests enjoy an exclusive selection of wines and signature cocktails, carefully curated to complement every meal. Our refined setting provides a perfect backdrop for special occasions, romantic dinners, or gatherings with friends, and our dedicated team delivers warm, attentive service to ensure every detail is taken care of. Opulence Restaurant is dedicated to creating a memorable dining experience that combines culinary excellence with luxury and comfort.</p>
             <img
-                   src=""
-                   width="60%"
-                   height="350" >
+                   src="/images/chef cooking.jpg"
+                   width="30%"
+                   height="380px" >
+            
           </div>
-          
+          <div class="img-sec">
+            <img
+                   src="/images/restaurantpic.webp"
+                   width="48%"
+                   height="400" >
+                   <img
+                   src="/images/rice and stew.jpg"
+                   width="48%"
+                   height="400" >
+          </div>
           <h1 class="h1">OUR SERVICES</h1>
                 <p class="p1">
                     Welcome to Opulence Restaurant where every meal is a celebration of taste, elegance, and comfort.
                 </p>
-                <div id="services">
+            <section class="services-container">
+                <div class="services-item">
                     <img src="./images/BREAKFAST.jpg" alt=""
-                    width="40%"
-                    height="250" 
+                    width="100%"
+                    height="350" 
                     >
-                    <img src="./Lunch.jpg" alt=""
-                    width="40%"
-                    height="250" 
-                    >
-                    <img src="./drinks.jpg" alt=""
-                    width="40%"
-                    height="250" 
-                    >
-                </div>
-                  <div class="services-pic">
                     <h2 >Breakfast</h2>
+                </div  >    
+                <div class="services-item">
+                    <img src="/images/Lunch.jpg" alt=""
+                    width="100%"
+                    height="350" 
+                    >
                     <h2>Lunch & Dinner</h2>
-                    <h2>Drinks</h2>
-                  </div>  
-                
-          <h1 class="h1">OUR BEST & DELICIOUS MENU</h1>
-          <div>
-            <ul>
-             <li><a href="#">Our Breakfast</a></li>
-             <li><a href="#">Our Main Meals</a></li>
-             <li><a href="#">Our Salads and Soups</a></li>
-             <li><a href="#">Our Pastries & Snacks</a></li>
-             <li><a href="#">Our Coffee & Tea</a></li>
-             <li><a href="#">Meal for Whole Family</a></li>
-            </ul> 
-         </div>
-         <a href="./menu.html"><button class="menu-but">Browser Our Menu</button></a>
+                </div>
+                <div class="services-item">  
+                    <img src="./images/drinks.jpg" alt=""
+                    width="100%"
+                    height="350" 
+                    >
+                    <h2>Drinks & Dessert</h2>
+                </div>
+            </section>
+            <a href="./menu asset/menu.html"><button class="menu-but">Browser Our Menu</button></a>
         </section>
-        <section>
+        <section class="section-count">
             <p class="count-text">We believe in making quality food</p>
             <div class="counts">
                 <ul>
-                    <li><h1>2M+</h1></li>
+                    <li><h1 class="count-number" data-target="2000" data-suffix="+">0</h1></li>
                     <li>Happy Customers</li>
                 </ul>
                 <ul>
-                    <li><h1>98%</h1></li>
+                    <li><h1 class="count-number" data-target="98" data-suffix="%">0</h1></li>
                     <li>Customer Satisfaction</li>
                 </ul>
                 <ul>
-                    <li><h1>20+</h1></li>
+                    <li><h1 class="count-number" data-target="8" data-suffix="+">0</h1></li>
                     <li>Our Branches</li>
                 </ul>
                 <ul>
-                    <li><h1>100+</h1></li>
+                    <li><h1 class="count-number" data-target="200" data-suffix="+">0</h1></li>
                     <li>Total Employees</li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <p>"I can always find something delicious at Opulence Restaurant. My family especially loves the Sunday Special."</p>
-                <p>-Dr.Lawrence Nderu</p>
+        
+        <!--Customer Feedback section-->
+        <section class="feedback-container">
+            <div class="customer-feedback">
+                <p class="p">"I can always find something delicious at Opulence Restaurant. My family especially loves the Sunday Special."</p>
+                <p class="p-name">-Dr.Lawrence Nderu</p>
+            </div>
+            <div class="customer-feedback">
+                <p class="p">"Opulence Restaurant is a hit with my friends who come for a one-of-a-kind dining experience."
+                </p>
+                <p class="p-name">-Brian Murithi</p>
+            </div>
+            <div class="customer-feedback">
+                <p id="p">I love Opulence Restaurant. The service is friendly and excellent every time. If you're looking for a down-home restaurant that will blow away your guests, this is the place to go."</p>
+                <p class="p-name">-Faith Musonik</p>
             </div>
         </section>
     </main>
+    <!--Teams Section-->
+    <h2 id="h2">Meet Our Team</h2>
+    <section class="team">
+        <div class="team-members">
+            <div class="team-member">
+                <img src="/images/brian.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>BRIAN MURITHI</h3>
+                 <p>PI</p>
+            </div>
+            <div class="team-member">
+                <img src="./images/joy.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>JOY CHEBET</h3>
+                 <p>TEAM LEAD</p>
+            </div>
+            <div class="team-member">
+                <img src="./images/seline.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>SELINE OWINO</h3>
+                 <p>FULL STACK DEVELOPER</p>
+            </div>
+            <!-- <div class="team-member">
+                <img src="/images/" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>JOHN KIGOTHO</h3>
+                 <p>BACK END DEVELOPER</p>
+            </div> -->
+            <div class="team-member">
+                <img src="/images/daniel.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>DANIEL OKINDA</h3>
+                 <p>FRONT END DEVELOPER</p>
+            </div>
+            <div class="team-member">
+                <img src="/images/nancy.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>NANCY KIMUNYI</h3>
+                 <p>DATA ANALYST</p>
+            </div>
+            <div class="team-member">
+                <img src="/images/joyk.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>JOY KABUI</h3>
+                 <p>WEB DEVELOPER</p>
+            </div>
+            <div class="team-member">
+                <img src="./images/curtis.jpg" alt=""
+                 width="100%"
+                 height="250" 
+                 >
+                 <h3>ALEX CURTIS</h3>
+                 <p>UI/UX DESIGNER</p>
+            </div>
 
+    </section>
+    
+       
     <!-- Footer section -->
-    <footer>
+    <!-- <footer>
         
             <hr>
             <div class="footer-details" >
@@ -136,11 +220,11 @@
                 <ul>
                  
                     <h3>Navigation</h3><br>
-                    <li><a href="/About.html">About Us</a></li><br>
-                    <li><a href="/Reservation.html">Reservations</a></li><br>
-                    <li><a href="/Menu.html">Menu</a></li><br>
-                    <li><a href="/Gallery.html">Gallery</a></li><br>
-                    <li><a href="/Contact.html">Contact Us</a></li>  
+                    <li><a href="/about/about.html">About Us</a></li><br>
+                    <li><a href="/reservation/reservations.html">Reservations</a></li><br>
+                    <li><a href="/menu asset/menu.html">Menu</a></li><br>
+                    <li><a href="/gallery/gallery.html">Gallery</a></li><br>
+                    <li><a href="/contact/contact.html">Contact Us</a></li>  
                 </ul>
             
                 <ul>
@@ -155,11 +239,55 @@
                 </div>
                 <div class="footer-icons">
                     <a href="https://www.facebook.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/facebook_lhhwk2.svg"></a>
-                    <a href="https://www.instagram.com/elewa_education/"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"></a>
-                    <a href="https://www.linkedin.com/company/elewa/"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"></a>
+                    <a href="https://www.instagram.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690295/elewa-group-website/Icons/SVG/_Social/instagram_x8ujcq.svg"></a>
+                    <a href="https://www.linkedin.com"><img _ngcontent-eva-c133="" src="https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690294/elewa-group-website/Icons/SVG/_Social/linkedin_x8smhm.svg"></a>
                 </div>
             </section>
             
-    </footer>
+    </footer> -->
+    <!-- Footer HTML -->
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Location Section -->
+      <div class="footer-section-location">
+        <h4>Our Location</h4>
+        <li><a href="https://www.google.com/maps/dir//Juja+Kwale,+Rd,+Juja/@-1.0912493,36.9318957,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f46276c2d9021:0xbefd8e40071d3352!2m2!1d37.0142977!2d-1.0912504?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">
+          <p>JKUAT-JUJA
+          </p>
+           </a>
+       </li>
+        <p>Phone:0793680168</p>
+        <p>Email: info@opulence.com</p>
+      </div>
+  
+      <!-- Navigation Section -->
+      <div class="footer-section navigation">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="/menu asset/menu.html">Menu</a></li>
+          <li><a href="/reservation/reservations.html">Reservations</a></li>
+          <li><a href="/contact/contact.html">Contact</a></li>
+          <li><a href="/gallery/gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Section -->
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+            <a href="https://www.facebook.com" class="social-icon">Facebook</a>
+            <a href="https://www.twitter.com" class="social-icon">Twitter</a>
+            <a href="https://www.instagram.com" class="social-icon">Instagram</a>
+            <a href="https://www.LinkedIn.com" class="social-icon">LinkedIn</a>
+          </div>
+      </div>
+    </div>
+  <hr>
+    <p class="footer-note">&copy; 2024 Appulence Restaurant. All rights reserved.</p>
+  </footer>
+  
+    <script src="/index.js"></script>
 </body>
 </html>

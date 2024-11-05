@@ -8,12 +8,12 @@
 }
 body{
     color: #fff;
-    background-color: #000;
+    background-color: #000000;
     font-family:"Montserrat";
+    font-size: 18px;
    
 }
 header{
-    border-bottom: 1px solid;
     background-color:#000;
     background-attachment: fixed;
     z-index: 1000; /* ensures the header stays on top */
@@ -46,20 +46,35 @@ nav ul li a {
     color:#fff;
     font-size: 24px;
     justify-content: flex-end;
-    font-family: sans-serif;
+    font-family: "League Spartan";
     text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
 }
 nav ul li a:hover {
     color: #f9943b;
     text-decoration:underline;
 }  
-
+.header{
+    background-color:#f9943b;
+    background-attachment: fixed;
+    z-index: 1000; /* ensures the header stays on top */
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.header nav ul li a:hover{
+  color: #000;
+}
 .h1 {
-    font-size: 3em;
-    margin-left: 500px;
-    margin-bottom: 40px;
+    font-size: 2em;
     font-family: "League Spartan";
-    margin-top: 40px;
   }
   
   .menu-container {
@@ -78,8 +93,11 @@ nav ul li a:hover {
     margin-left: 30px;
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: transform 0.3s;
   }
-  
+  .menu-item:hover {
+    transform: scale(1.05);
+  }
   .menu-item img {
     width: 100%;
     height: 200px;
@@ -103,7 +121,7 @@ nav ul li a:hover {
     transform: scale(1.05);
   }
   
-  .cart-container {
+  /* .cart-container {
     border: 1px solid #000;
     border-radius: 8px;
     padding: 20px;
@@ -119,11 +137,12 @@ nav ul li a:hover {
   }
   .cart-container h2 {
     margin-top: 0;
-  }
+  } */
   
   #cart-items {
     list-style: none;
     padding: 0;
+    color: #000;
   }
   
   #cart-items li {
@@ -136,4 +155,133 @@ nav ul li a:hover {
     font-weight: bold;
     margin-top: 10px;
   }
-  
+     /* Modal container (hidden by default) */
+.modal {
+  display: none; /* Hidden initially */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Center it vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Width of the modal box */
+  max-width: 500px; /* Maximum width */
+  border-radius: 8px;
+  color: #000;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer {
+  background-color: #1e1d1d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+  margin: 10px;
+}
+
+.footer h4 {
+  color: #f9943b;
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+li{
+  list-style: none;
+}
+li a  {
+  text-decoration: none;
+  list-style: none;
+}
+li a p{
+  color: #fff;
+}
+li a p:hover{
+  color: #f9943b;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-note {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: orange;
+  margin: 3px 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #f9943b;
+  padding: 6px 10px;
+  border: 1px solid #f9943b;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #f9943b;
+  color: black;
+}
+
+.footer-note {
+  color: #fff;
+  margin-top: 15px;
+}

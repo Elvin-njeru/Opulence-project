@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opulence Restaurant Menu</title>
+  <link rel="stylesheet" href="/menu asset/menu.css">
+</head>
+<body>
+   <header>
+    <h1 id="h1">
+        <img 
+        src="/images/OpulenceLogo.png">
+    </h1>
+    <nav >
+        <ul>
+             <li><a href="/index.html">Home</a></li>   
+             <li><a href="/about/about.html">About </a></li>
+             <li><a href="/reservation/reservations.html">Reservations</a></li>  
+             <li><a href="/menu asset/menu.html">Menu</a></li>  
+             <li><a href="/gallery/gallery.html">Gallery</a></li>  
+             <li><a href="/contact/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+ <header class="header">
+  <h1 class="h1">OPULENCE MENU</h1>
+  <nav><ul>
+    <li><a href="/menu asset/menu.html">ALL</a></li>   
+    <li><a href="/menu asset/breakfast.html">BREAKFAST </a></li>
+    <li><a href="/menu asset/lunch.html">LUNCH & DINNER</a></li>
+    <li><a href="/menu asset/desert.html">DRINKS & DESSERT</a></li>   
+</ul></nav>
+    <!-- Cart Button -->
+    <button onclick="openCart()">View Cart</button>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <span class="cart-count">0</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+              <!-- Cart items will be added here dynamically -->
+            </ul>
+            <p id="total-price">Total: $0.00</p>
+            <button onclick="clearCart()">Clear Cart</button>
+            <!-- Cart items would go here -->
+        </div>
+    </div>
+</header> 
+  <div class="menu-container">
+    <div class="menu-item" >
+      <img src="/menu asset/images/apple toast.avif" alt="Apple Toast">
+      <p>Apple Toast</p>
+      <p>$12.99</p>
+      <button class="add-to-cart"8 onclick="addToCart('Apple Toast', 12.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item" >
+      <img src="/menu asset/images/beef.jpg" >
+      <p>Beef Stew</p>
+      <p>$8.99</p>
+      <button class="add-to-cart" onclick="addToCart('Beef Stew', 8.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item" >
+      <img src="/menu asset/images/spicynoodles.jpg" >
+      <p>Spicy Noodles</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Spicy Noodles', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item" >
+      <img src="/menu asset/images/shrimps.avif" >
+      <p>Shrimps</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Shrimps', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item" >
+      <img src="/menu asset/images/scrambled egg.jpg" >
+      <p>Scrambled egg</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Scrambled egg', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/porkchops.avif" >
+      <p>Pork Chops</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Pork Chops', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/pasta.jpg" >
+      <p>Pasta</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Pasta', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/pancakes.avif">
+      <p>Pancakes</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Pancakes', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/meatpie.jpg" alt="Grilled Salmon">
+      <p>Meatpie</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Meatpie', 15.99)">Add to Cart</button>
+    </div>
+     <div class="menu-item">
+      <img src="/menu asset/images/Lambchop.jpg" alt="Grilled Salmon">
+      <p>Lamb Chops</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Lamb Chops', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/friesandsteak.jpg" >
+      <p>Friends Steak</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Friends Steak', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/frenchtoast.jpg" >
+      <p>French Toast</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('French Toast', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/choccake.avif" >
+      <p>Chocolate Cake</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Chocolate Cake', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/chickenpilau.jpg" >
+      <p>Chicken Pilau</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Chicken Pilau', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/chickendrums.jpg" >
+      <p>Chicken Drums</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Chicken Drums', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/chickenandrice.jpg" >
+      <p>Chicken & Rice</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Chicken & Rice', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/Chichken wings.jpg">
+      <p>Chicken Wings</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Chicken Wings', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/caramelicedcofee.jpg" >
+      <p>Carameliced Cofee</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Carameliced Cofee', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/caramelicecream.avif">
+      <p>Caramel Cream</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Caramel Cream', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/capuccinoandcroissant.jpg" >
+      <p>Capuccino & Croissant</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Capuccino & Croissant', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/butternutsquashandmaize.jpg" >
+      <p>Butternutsquash & Maize</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Butternutsquash & Maize', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/butterchicken stew.jpg" >
+      <p>Butternut Chicken Stew</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Butternut Chicken Stew', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/burger.avif" >
+      <p>Burger</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Burger', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/buffalochickenwings.jpg" >
+      <p>Buffalo Chicken Wings</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Buffalo Chicken Wings', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/blueberrypie.avif" >
+      <p>Blueberry Pie</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Blueberry Pie', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/blacktea.jpg" >
+      <p>Black Tea</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('Black Tea', 15.99)">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <img src="/menu asset/images/beefstew.jpg" >
+      <p>BeefStew</p>
+      <p>$15.99</p>
+      <button class="add-to-cart" onclick="addToCart('BeefStew', 15.99)">Add to Cart</button>
+    </div>
+  </div>
+<!-- Footer section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Location Section -->
+    <div class="footer-section-location">
+      <h4>Our Location</h4>
+      <li><a href="https://www.google.com/maps/dir//Juja+Kwale,+Rd,+Juja/@-1.0912493,36.9318957,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f46276c2d9021:0xbefd8e40071d3352!2m2!1d37.0142977!2d-1.0912504?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">
+        <p>JKUAT-JUJA
+        </p>
+         </a>
+     </li>
+      <p>Phone:0793680168</p>
+      <p>Email: info@opulence.com</p>
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="footer-section navigation">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer-note">&copy; 2024 Appulence Restaurant. All rights reserved.</p>
+</footer>
+  <script src="/menu asset/menu.js"></script>
+</body>
+</html>
