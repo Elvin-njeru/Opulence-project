@@ -155,15 +155,20 @@ img:hover{
 .services-item:hover{
     transform: scale(1.05);
 }
+#story a {
+    /* margin-left: 400px; */
+
+}
 .menu-but{
-    margin-left: 39%;
+    /* margin-left: 39%;
     transition: transform 0.3s;
     margin-top: 50px;
     margin-bottom: 100px;
     border-radius: 8px;
     font-weight: 600;
     font-family: "Montserrat";
-    width: 300px;
+    width: 300px; */
+    margin-left: 200px;
 }
 .menu-but:hover{
     transform: scale(1.05);
